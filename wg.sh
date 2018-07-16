@@ -14,6 +14,7 @@ ipv4="10.83.252.X"
 publicip="11.22.33.44"
 portbase=31337
 
+#Ab hier nichts mehr ändern!
 port=$portbase
 while grep $port /etc/wireguard/*.conf &>/dev/null ; do ((port+=1)); done
 
