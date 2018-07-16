@@ -8,9 +8,10 @@ fi
 
 
 #Diese Daten bitte anpassen:
-ipv6ll="fe80::22:33:44:11"
-ipv6ula="fd43:5602:29bd:ffff::19"
-ipv4="10.83.252.2"
+ipv6ll="fe80::XX:XX:XX:XX"
+ipv6ula="fd43:5602:29bd:ffff::XX"
+ipv4="10.83.252.X"
+publicip="11.22.33.44"
 portbase=31337
 
 port=$portbase
@@ -74,4 +75,4 @@ echo "Starte babeld neu"
 /etc/init.d/babeld restart
 
 echo "Publickey, IP und Port weitergeben an Peeringpartner:"
-echo "$pubkey 81.95.4.186 $port" 
+echo "$pubkey $publicip $port" 
